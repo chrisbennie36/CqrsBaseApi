@@ -1,0 +1,11 @@
+C:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\bin\Debug\net8.0\DomainDrivenDesign.Shared.Enums.deps.json
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\bin\Debug\net8.0\DomainDrivenDesign.Shared.Enums.dll
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\bin\Debug\net8.0\DomainDrivenDesign.Shared.Enums.pdb
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\obj\Debug\net8.0\DomainDrivenDesign.Shared.Enums.GeneratedMSBuildEditorConfig.editorconfig
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\obj\Debug\net8.0\DomainDrivenDesign.Shared.Enums.AssemblyInfoInputs.cache
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\obj\Debug\net8.0\DomainDrivenDesign.Shared.Enums.AssemblyInfo.cs
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\obj\Debug\net8.0\DomainDrivenDesign.Shared.Enums.csproj.CoreCompileInputs.cache
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\obj\Debug\net8.0\DomainDrivenDesign.Shared.Enums.dll
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\obj\Debug\net8.0\refint\DomainDrivenDesign.Shared.Enums.dll
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\obj\Debug\net8.0\DomainDrivenDesign.Shared.Enums.pdb
+C:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Shared.Enums\obj\Debug\net8.0\ref\DomainDrivenDesign.Shared.Enums.dll
