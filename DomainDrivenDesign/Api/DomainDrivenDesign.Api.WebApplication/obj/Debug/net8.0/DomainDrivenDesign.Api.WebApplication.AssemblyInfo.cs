@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DomainDrivenDesign.Api.WebApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e86dd52dcd23304c84857a5b77e9d3fe395b2eec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+386a7da1c493ce2f268fff5b73b77ad3b56c15b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("DomainDrivenDesign.Api.WebApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DomainDrivenDesign.Api.WebApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
