@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bdKRrpdGKa4=",
+  "dgSpecHash": "6SmM2peSQtg=",
   "success": true,
-  "projectFilePath": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj",
+  "projectFilePath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",

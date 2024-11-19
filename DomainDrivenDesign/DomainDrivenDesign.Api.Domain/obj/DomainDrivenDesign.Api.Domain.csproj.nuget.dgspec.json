@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\DomainDrivenDesign.Api.Domain.csproj": {}
+    "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\DomainDrivenDesign.Api.Domain.csproj": {}
   },
   "projects": {
-    "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj": {
+    "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj",
+        "projectUniqueName": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj",
         "projectName": "DomainDrivenDesign.Api.Data",
-        "projectPath": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj",
+        "projectPath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\obj\\",
+        "outputPath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,6 +20,7 @@
           "net8.0"
         ],
         "sources": {
+          "D:\\MugetSources": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,14 +83,14 @@
         }
       }
     },
-    "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\DomainDrivenDesign.Api.Domain.csproj": {
+    "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\DomainDrivenDesign.Api.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\DomainDrivenDesign.Api.Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\DomainDrivenDesign.Api.Domain.csproj",
         "projectName": "DomainDrivenDesign.Api.Domain",
-        "projectPath": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\DomainDrivenDesign.Api.Domain.csproj",
+        "projectPath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\DomainDrivenDesign.Api.Domain.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\obj\\",
+        "outputPath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -98,14 +99,15 @@
           "net8.0"
         ],
         "sources": {
+          "D:\\MugetSources": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj": {
-                "projectPath": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj"
+              "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj": {
+                "projectPath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Api.Data\\DomainDrivenDesign.Api.Data.csproj"
               },
               "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Shared.Enums\\DomainDrivenDesign.Shared.Enums.csproj": {
                 "projectPath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\DomainDrivenDesign.Shared.Enums\\DomainDrivenDesign.Shared.Enums.csproj"
@@ -181,6 +183,7 @@
           "net8.0"
         ],
         "sources": {
+          "D:\\MugetSources": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

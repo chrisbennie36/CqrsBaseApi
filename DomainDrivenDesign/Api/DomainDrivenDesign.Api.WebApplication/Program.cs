@@ -1,6 +1,3 @@
-using Microsoft.Win32.SafeHandles;
-using System.Security.AccessControl;
-using System.Reflection.PortableExecutable;
 using System.Text;
 using DomainDrivenDesign.Api.Data;
 using DomainDrivenDesign.Api.Domain.Commands;
@@ -10,7 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using NSwag.Generation.Processors.Security;
-using Microsoft.AspNetCore.Authorization;
+using DomainDrivenDesign.Api.WebApplication.ExceptionHandler;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +27,8 @@ builder.Services.AddOpenApiDocument(config =>
     });
     config.OperationProcessors.Add(new OperationSecurityScopeProcessor("Bearer"));
 });
+
+builder.Services.AddProblemDetails().AddExceptionHandler<GlobalExceptionHandler>();
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(AddMessageCommand).Assembly));
 builder.Services.AddAutoMapper(typeof(Program));
@@ -55,13 +54,16 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-Log.Logger = new LoggerConfiguration().WriteTo.File("logs-", rollingInterval: RollingInterval.Day).MinimumLevel.Debug().CreateLogger();
+Log.Logger = new LoggerConfiguration().WriteTo.File("./Logs/logs-", rollingInterval: RollingInterval.Day).MinimumLevel.Debug().CreateLogger();
 
 if(app.Environment.IsDevelopment())
 {
     app.UseOpenApi();
     app.UseSwaggerUi();
 }
+
+app.UseStatusCodePages();
+app.UseExceptionHandler();
 
 //The following three should be in this exact order - see here: https://stackoverflow.com/questions/43574552/authorization-in-asp-net-core-always-401-unauthorized-for-authorize-attribute
 app.UseAuthentication();
