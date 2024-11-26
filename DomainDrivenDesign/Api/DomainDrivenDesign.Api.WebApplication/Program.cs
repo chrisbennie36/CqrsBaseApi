@@ -11,6 +11,7 @@ using DomainDrivenDesign.Api.WebApplication.ExceptionHandler;
 using Amazon.CloudWatchLogs;
 using Amazon.Runtime;
 using Serilog.Sinks.AwsCloudWatch;
+using Amazon;
 
 var builder = WebApplication.CreateBuilder(args);
 
