@@ -15,3 +15,4 @@ c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Api.Data\ob
 c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Api.Data\obj\Debug\net8.0\DomainDrivenDesign.Api.Data.pdb
 C:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Api.Data\obj\Debug\net8.0\DomainDrivenDesign.Api.Data.genruntimeconfig.cache
 C:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Api.Data\obj\Debug\net8.0\ref\DomainDrivenDesign.Api.Data.dll
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\DomainDrivenDesign.Api.Data\obj\Debug\net8.0\DomainDrivenDesign.Api.Data.sourcelink.json

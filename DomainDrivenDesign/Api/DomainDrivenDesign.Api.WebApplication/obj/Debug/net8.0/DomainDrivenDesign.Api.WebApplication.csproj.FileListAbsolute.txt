@@ -141,3 +141,4 @@ c:\Projects\DomainDrivenDesign\DomainDrivenDesign\Api\DomainDrivenDesign.Api.Web
 c:\Projects\DomainDrivenDesign\DomainDrivenDesign\Api\DomainDrivenDesign.Api.WebApplication\obj\Debug\net8.0\DomainDrivenDesign.Api.WebApplication.pdb
 c:\Projects\DomainDrivenDesign\DomainDrivenDesign\Api\DomainDrivenDesign.Api.WebApplication\obj\Debug\net8.0\DomainDrivenDesign.Api.WebApplication.genruntimeconfig.cache
 c:\Projects\DomainDrivenDesign\DomainDrivenDesign\Api\DomainDrivenDesign.Api.WebApplication\obj\Debug\net8.0\ref\DomainDrivenDesign.Api.WebApplication.dll
+c:\Projects\DomainDrivenDesign\DomainDrivenDesign\Api\DomainDrivenDesign.Api.WebApplication\obj\Debug\net8.0\DomainDrivenDesign.Api.WebApplication.sourcelink.json

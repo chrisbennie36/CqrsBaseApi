@@ -8,6 +8,9 @@ using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using NSwag.Generation.Processors.Security;
 using DomainDrivenDesign.Api.WebApplication.ExceptionHandler;
+using Amazon.CloudWatchLogs;
+using Amazon.Runtime;
+using Serilog.Sinks.AwsCloudWatch;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +19,7 @@ builder.Services.AddMvcCore().AddApiExplorer();
 //Nswag: Useful setup link for both NSwag and Swashbuckle here: https://code-maze.com/aspnetcore-swashbuckle-vs-nswag/
 builder.Services.AddOpenApiDocument(config => 
 {
-    config.Title = "User Management API";
+    config.Title = "CQRS Base API";
     config.AddSecurity("Bearer", Enumerable.Empty<string>(), new NSwag.OpenApiSecurityScheme
     {
         Type = NSwag.OpenApiSecuritySchemeType.Http,
@@ -55,6 +58,18 @@ builder.Services.AddAuthorization();
 var app = builder.Build();
 
 Log.Logger = new LoggerConfiguration().WriteTo.File("./Logs/logs-", rollingInterval: RollingInterval.Day).MinimumLevel.Debug().CreateLogger();
+
+var client = new AmazonCloudWatchLogsClient(new BasicAWSCredentials(builder.Configuration["AwsCloudwatchLogging:AccessKey"], builder.Configuration["AwsCloudwatchLogging:SecretKey"]), RegionEndpoint.USEast1);
+
+Log.Logger = new LoggerConfiguration().WriteTo.AmazonCloudWatch(
+    logGroup: builder.Configuration["AwsCloudwatchLogging:LogGroup"],
+    logStreamPrefix: builder.Configuration["AwsCloudwatchLogging:LogStreamPrefix"],
+    restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Verbose,
+    createLogGroup: true,
+    appendUniqueInstanceGuid: true,
+    appendHostName: false,
+    logGroupRetentionPolicy: LogGroupRetentionPolicy.ThreeDays,
+    cloudWatchClient: client).CreateLogger();
 
 if(app.Environment.IsDevelopment())
 {

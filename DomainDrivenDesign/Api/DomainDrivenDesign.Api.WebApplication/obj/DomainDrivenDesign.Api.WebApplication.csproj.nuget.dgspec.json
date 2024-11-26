@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj": {}
+    "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj": {
+    "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj",
+        "projectUniqueName": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj",
         "projectName": "DomainDrivenDesign.Api.WebApplication",
-        "projectPath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj",
+        "projectPath": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\DomainDrivenDesign.Api.WebApplication.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\obj\\",
+        "outputPath": "c:\\Projects\\DomainDrivenDesign\\DomainDrivenDesign\\Api\\DomainDrivenDesign.Api.WebApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -99,6 +99,10 @@
             "Serilog": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.AwsCloudWatch": {
+              "target": "Package",
+              "version": "[4.3.37, )"
             },
             "Serilog.Sinks.File": {
               "target": "Package",
