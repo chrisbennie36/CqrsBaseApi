@@ -38,7 +38,8 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(AddMe
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddValidatorsFromAssemblyContaining<MessageDtoValidator>();
 
-builder.Services.AddDbContext<AppDbContext>();
+//For more control over DBContexts, can make use of the DbContextScope approach described here: https://mehdi.me/ambient-dbcontext-in-ef6/, https://github.com/mehdime/DbContextScope?ref=mehdi.me 
+builder.Services.AddDbContext<AppDbContext>(); 
 /*builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("ApiConnectionString")));*/
 
@@ -58,19 +59,25 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-Log.Logger = new LoggerConfiguration().WriteTo.File("./Logs/logs-", rollingInterval: RollingInterval.Day).MinimumLevel.Debug().CreateLogger();
+if(Boolean.Parse(builder.Configuration["AwsCloudwatchLogging:Enabled"]) == false)
+{
+    Log.Logger = new LoggerConfiguration().WriteTo.File("./Logs/logs-", rollingInterval: RollingInterval.Day).MinimumLevel.Debug().CreateLogger();
+}
 
-var client = new AmazonCloudWatchLogsClient(new BasicAWSCredentials(builder.Configuration["AwsCloudwatchLogging:AccessKey"], builder.Configuration["AwsCloudwatchLogging:SecretKey"]), RegionEndpoint.USEast1);
+else
+{
+    var client = new AmazonCloudWatchLogsClient(new BasicAWSCredentials(builder.Configuration["AwsCloudwatchLogging:AccessKey"], builder.Configuration["AwsCloudwatchLogging:SecretKey"]), RegionEndpoint.USEast1);
 
-Log.Logger = new LoggerConfiguration().WriteTo.AmazonCloudWatch(
-    logGroup: builder.Configuration["AwsCloudwatchLogging:LogGroup"],
-    logStreamPrefix: builder.Configuration["AwsCloudwatchLogging:LogStreamPrefix"],
-    restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Verbose,
-    createLogGroup: true,
-    appendUniqueInstanceGuid: true,
-    appendHostName: false,
-    logGroupRetentionPolicy: LogGroupRetentionPolicy.ThreeDays,
-    cloudWatchClient: client).CreateLogger();
+    Log.Logger = new LoggerConfiguration().WriteTo.AmazonCloudWatch(
+        logGroup: builder.Configuration["AwsCloudwatchLogging:LogGroup"],
+        logStreamPrefix: builder.Configuration["AwsCloudwatchLogging:LogStreamPrefix"],
+        restrictedToMinimumLevel: Serilog.Events.LogEventLevel.Verbose,
+        createLogGroup: true,
+        appendUniqueInstanceGuid: true,
+        appendHostName: false,
+        logGroupRetentionPolicy: LogGroupRetentionPolicy.ThreeDays,
+        cloudWatchClient: client).CreateLogger();
+}
 
 if(app.Environment.IsDevelopment())
 {
